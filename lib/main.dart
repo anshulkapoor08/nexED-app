@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nedex/screens/splash_screen.dart';
-import 'package:nedex/utilities/bottomsheet.dart';
 //import 'package:nedex/screens/splash_screen_services.dart';
 //import 'package:nedex/userentry.dart';
 
@@ -21,7 +20,10 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           brightness: Brightness.light,
           primaryColor: Colors.purple,
-        ),
+            textTheme: const TextTheme().copyWith(
+              bodyText1:TextStyle(fontFamily: 'Poppins'),
+
+        ),),
         home: const SplashScreen());
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class LoginScreen extends StatelessWidget {
   List<String> quotes = [
     "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
@@ -7,6 +8,8 @@ class LoginScreen extends StatelessWidget {
     "Your time is limited, don't waste it living someone else's life. - Steve Jobs",
     "Life is what happens when you're busy making other plans. - John Lennon",
   ];
+
+  LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
