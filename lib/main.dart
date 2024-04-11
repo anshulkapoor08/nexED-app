@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
           primaryColor: Colors.purple,
             textTheme: const TextTheme().copyWith(
-              bodyText1:TextStyle(fontFamily: 'Poppins'),
+              bodyLarge:TextStyle(fontFamily: 'Poppins'),
 
         ),),
         home: const SplashScreen());

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nedex/screens/homePage.dart';
 
 class FeatureScreen1 extends StatefulWidget {
   @override
@@ -85,14 +86,14 @@ class _FeatureScreen1State extends State<FeatureScreen1> {
                         Container(
                           width: 45,
                           height: 45,
-                          margin: EdgeInsets.symmetric(horizontal: 40),
-                          decoration: BoxDecoration(
+                          margin: const EdgeInsets.symmetric(horizontal: 40),
+                          decoration:const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.white54,
                           ),
                           child: IconButton(
                             onPressed: _nextFeature,
-                            icon: Icon(Icons.arrow_forward_ios_rounded),
+                            icon: const Icon(Icons.arrow_forward_ios_rounded),
                             iconSize: 30,
                             color: Colors.white,
                           ),
@@ -100,7 +101,12 @@ class _FeatureScreen1State extends State<FeatureScreen1> {
                       ],
                     )
                   : ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreenPage()),
+            );
+                      },
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
